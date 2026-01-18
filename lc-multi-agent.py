@@ -45,6 +45,12 @@ Tool dependency rule:
 - Then call service_insights_service(work_order_id) to get product_id
 - Then call knowledge_access_service(product_id) to get cleanup steps
 
+Final response MUST include:
+- work_order_id
+- work_order_type
+- product_id
+- cleanup_steps (bulleted list)
+
 Don't hallucinate just be grounded to the data provided.
 """
 
